@@ -1,0 +1,820 @@
+/*IMPORTAR FUENTES DE TEXTO*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cabin:wght@400;600;700&family=Nunito:wght@300;400;700&display=swap');
+
+/*VALORES POR DEFECTO*/
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;}
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-image: url(../imagenes/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+body.overflow-visible {
+    overflow: visible;
+}
+h1
+{
+    font-family: 'Libre Baskerville', serif;
+}
+p,b
+{
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9em;
+}
+button,span
+{
+    font-family: 'Cabin', sans-serif;
+}
+
+/*SECCIÓN DE BIENVENIDA*/
+#SeccionBienvenida 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imagenes/FondoBienvenida.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+    width: 100%;
+    height: 50em;
+    box-shadow: inset black 0.5em 0.5em 1em 0.5em;
+    overflow: hidden;
+}
+#SeccionBienvenida > .Titulo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 5.5rem; 
+    color: rgb(0, 238, 255); 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.8), 0px 0px 25px rgba(0, 238, 255, 0.5);
+    background: linear-gradient(45deg, rgb(0, 238, 255), rgb(0, 255, 255)); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#SeccionBienvenida > .Titulo:hover {
+    transform: scale(1.1); 
+    text-shadow: 5px 6px 12px rgba(0, 0, 0, 0.9), 0px 0px 30px rgb(0, 255, 229); 
+    animation: Resplandor 4s ease infinite;
+    cursor: default;
+}
+#letra1
+{
+    animation: Aparecer 4s ease;
+}
+#letra2
+{
+    animation: Aparecer 5.5s ease;
+}
+#letra3
+{
+    animation: Aparecer 7s ease;
+}
+#letra4
+{
+    animation: Aparecer 8.5s ease;
+}
+#letra5
+{
+    animation: Aparecer 9s ease;
+}
+#letra6
+{
+    animation: Aparecer 10.5s ease;
+}
+#letra7
+{
+    animation: Aparecer 11s ease;
+}
+#letra8
+{
+    animation: Aparecer 12.5s ease;
+}
+#letra9
+{
+    animation: Aparecer 13s ease;
+}
+#letra10
+{
+    animation: Aparecer 14.5s ease;
+}
+#SeccionBienvenida > article
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24em;
+}
+.Slogan
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    border: 5px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 12px;
+    padding: 1rem;
+    width: 15em;
+    height: auto;
+    font-size: 2.5em;
+    transition: color 3s,text-shadow 3s;
+    animation: Aparecer 9s ease;
+}
+.Slogan:hover 
+{
+    color: rgba(0, 0, 0, 0.7); 
+    text-shadow: 3px 4px 8px rgba(0, 0, 0, 1), 0px 0px 3px rgb(0, 238, 255);
+}
+.Slogan > p {
+    position: relative; 
+    font-size: 1em;
+    text-align: center;
+    width: 15em;
+    height: 2.5em; 
+    line-height: 1.5;
+    overflow: hidden;
+}
+.Slogan > p::before, 
+.Slogan > p::after {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 2s ease;
+}
+.Slogan > p::before {
+    content: "Porque cada escena merece su momento.";
+    opacity: 1;
+}
+.Slogan > p::after {
+    content: "Y cada momento un recuerdo.";
+    opacity: 0;
+}
+.Slogan > p:hover::before {
+    opacity: 0;
+}
+.Slogan > p:hover::after {
+    opacity: 1;
+}
+#SeccionBienvenida > article > button
+{
+    width: 10em;
+    text-align: center;
+    font-size: 1.5em;
+    background: linear-gradient(to right, #626467, #b1c6da);
+    border: 4px inset black;
+    transition: background 3s,color 3s,font-weight 2s,text-shadow 3s;
+    animation: Aparecer 9s ease;
+}
+#SeccionBienvenida > article > button:hover
+{
+    background: linear-gradient(to right, #6b7078, #0e1012);
+    color: rgb(0, 238, 255); 
+    font-weight: bold;
+    text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.8), 3px 3px 25px rgb(0, 238, 255);
+}
+.Cita
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.Cita > div
+{
+    position: absolute;
+    transform: rotate(-1deg);
+    margin-left: 80em;
+    width: 19em;
+    height: 19em;
+    animation: Resaltar 0.5s ease forwards;
+    animation-delay: 5s;
+
+}
+.Cita > div  > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+blockquote
+{
+    display: none; 
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 40em;
+    height: auto;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    border: 5px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 12px;
+    margin-left: 25em;
+    animation: EntradaCita 9s ease;
+}
+blockquote > div {
+    width: 7em;
+    height: 7em;
+    border-radius: 100%; 
+    border: 3px solid black;
+    overflow: hidden;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+blockquote > div > img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+/*SECCIÓN DE PELICULAS*/
+#SeccionPeliculas {
+    display: none; 
+    flex-direction: row;;
+    height: auto;
+    gap: 1rem;
+    animation: DeslizarArriba 4s ease;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    padding: 0.5em;
+    background-color: rgb(10,10,10,255);
+    width: 100%;
+    height: 5em;
+}
+header > div
+{
+    margin-left: 1em;
+    width: 5em;
+    height: auto;
+}
+header > div > a > img
+{
+    width: 100%;
+    height: 100%;
+}
+header > nav
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 40em;
+    cursor: default;
+}
+header > nav > #botones
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 21rem;
+    margin-right: 1em;
+    color: wheat;
+}
+header > nav > #botones > div
+{
+    padding: 0.2em;
+    transition: text-shadow 3s,color 3s,border-radius 2s;
+}
+header > nav > #botones > div:hover
+{
+    color:  rgb(0, 238, 255);
+    text-shadow: 5px 6px 12px rgba(0, 0, 0, 0.9), 0px 0px 30px rgb(0, 255, 229); 
+    border-radius: 1em;
+    cursor: pointer;
+}
+header > nav > #botones > #musica
+{
+    display: flex;
+    flex-direction: row;
+}
+#SeccionPeliculas > .peliculas
+{
+    margin-top: 5.5em;
+}
+#SeccionPeliculas > .peliculas > h2
+{
+    text-align: center;
+    color: rgb(0, 238, 255); 
+    font-weight: bold; 
+    text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.8), 0px 0px 25px rgba(0, 238, 255, 0.5);
+}
+ul
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);;
+    justify-items: center;
+    gap: 2em;
+}
+li
+{
+    width: 19em;
+    height: auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    border: 4px groove rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    text-align: center;
+    transition: box-shadow 2s,transform 2s;
+}
+li:hover
+{
+    box-shadow: 0.5em 0.5em 0.5em rgb(18, 17, 17);
+    transform: translate(-1em,-1em);
+}
+li > img
+{
+    width: 19em;
+    height: 25em;
+    border-radius: 12px;
+}
+
+/*SECCIÓN DE DETALLES*/
+#SeccionDetalle {
+    display: none;
+    flex-direction: column;
+    align-items: center; 
+    align-content: center;
+    width: 100%;
+    height: auto;
+    animation: DeslizarArriba 4s ease;
+}
+#SeccionDetalle > .VolverAtras,#SeccionInforme > .VolverAtras
+{
+    display: flex;
+    flex-direction: column;
+    align-items: end; 
+    width: 100%;
+    height: 2.5em;
+}
+#SeccionDetalle > .VolverAtras > button,#SeccionInforme > .VolverAtras > button
+{
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    background: none;
+    border: none;
+    transition: text-shadow 2s,font-size 2s;
+    animation: Resaltar2 1s ease forwards;
+    animation-delay: 5s;
+    margin-right: 0.5em;
+}
+#SeccionDetalle > .VolverAtras > button:hover,#SeccionInforme > .VolverAtras > button:hover
+{
+    text-shadow: 0.1em 0.1em 0.1em rgb(65, 0, 0);
+    font-size: 3em;
+}
+#SeccionDetalle > #detalle
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    height: auto;
+}
+#SeccionDetalle > #detalle > #ImagenPelicula
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    border: 4px groove rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    width: 25em;
+    height: auto;
+    margin-left: 1em;
+    padding: 0.3em;
+    font-size: 1em;
+    transition: box-shadow 2s,transform 2s;
+}
+#ImagenPelicula:hover
+{
+    box-shadow: 0.5em 0.5em 0.5em rgb(18, 17, 17);
+    transform: translate(-1em,-1em);
+}
+#SeccionDetalle > #detalle > #ImagenPelicula > img
+{
+    width: 25em;
+    height: 35em;
+    border-radius: 12px;
+}
+#SeccionDetalle > #detalle > #DetallePelicula
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    width: 60em;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    border: 4px groove rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    padding: 0.3em;
+}
+#SeccionDetalle > #detalle > #DetallePelicula > p
+{
+    font-size: 1em;
+    cursor: default;
+}
+#SeccionDetalle > #detalle > #DetallePelicula > p > b
+{
+    transition: color 0.5s,text-shadow 0.5s;
+}
+#SeccionDetalle > #detalle > #DetallePelicula > p > b:hover
+{
+    color: rgb(0, 238, 255);
+    text-shadow: 0.1em 0.1em 0.5em rgb(180, 223, 226);
+}
+
+/*SECCIÓN DE INFORME*/
+#SeccionInforme {
+    display: none;
+    flex-direction: column;
+    align-items: center; 
+    align-content: center;
+    width: 100%;
+    height: auto;
+    animation: DeslizarArriba 4s ease;
+}
+
+
+/* ANIMACIONES */
+@keyframes Aparecer 
+{
+    0% 
+    {
+        opacity: 0  ;
+        transform: translate(0rem, 0rem);
+    }
+    50% 
+    {
+        opacity: 0.7;
+        transform: translate(1.5rem, 1.5rem);
+    }
+    100% 
+    {
+        opacity: 1;
+        transform: translate(0rem, 0rem);
+    }
+}
+@keyframes Resplandor {
+    0% {
+        color: rgb(0, 255, 229); 
+        text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.8), 0px 0px 20px rgb(0, 255, 229);
+    }
+    50% {
+        color: #FFFFFF; 
+        text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.9), 0px 0px 40px rgba(255, 255, 255, 0.8); 
+    }
+    100% {
+        color: rgb(0, 255, 229); 
+        text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.8), 0px 0px 20px rgb(0, 255, 229); 
+    }
+}
+@keyframes EntradaCita 
+{
+    0%
+    {
+        transform: scale(0);
+        opacity: 0; 
+    }
+    50% 
+    {
+        transform: scale(1.1); 
+        opacity: 0.5; 
+    }
+    100% 
+    {
+        transform: scale(1); 
+        opacity: 1;
+    }
+}
+@keyframes Resaltar {
+    0%
+    {
+        transform: rotate(-15deg);
+    }
+    50%
+    {
+        transform: rotate(-10deg);
+    }
+    100%
+    {
+        transform: rotate(-15deg);
+    }
+}
+@keyframes Resaltar2 
+{
+    0%
+    {
+        transform: rotate(-30deg);
+        text-shadow: 0.1em 0.1em 0.1em rgb(65, 0, 0,0);
+    }
+    50%
+    {
+        transform: rotate(30deg);
+        text-shadow: 0.1em 0.1em 0.1em rgb(65, 0, 0,0.5);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        text-shadow: 0.1em 0.1em 0.1em rgb(65, 0, 0,0);
+    }
+}
+@keyframes DeslizarArriba 
+{
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* MEDIA QUERY */
+@media (max-width: 900px) {
+    ul {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    /* SECCIÓN DE BIENVENIDA */
+    #SeccionBienvenida {
+        padding: 0.5em;
+        width: 100%;
+        height: 55rem;
+    }
+
+    #SeccionBienvenida > .Titulo {
+        justify-content: center; 
+        font-size: 3rem; 
+        color: rgb(0, 238, 255);
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.8), 0px 0px 25px rgba(0, 238, 255, 0.5);
+        background: linear-gradient(45deg, rgb(0, 238, 255), rgb(0, 255, 255));
+        -webkit-background-clip: text;
+        background-clip: text;
+        transition: none;
+        text-align: center;
+    }
+    #SeccionBienvenida > .Titulo:hover {
+        transform: none;
+        text-shadow: none;
+        animation: none;
+    }
+    #SeccionBienvenida > article {
+        flex-direction: column; 
+        gap: 2em;
+    }
+    .Slogan {
+        width: 90%;
+        max-width: 20em; 
+        font-size: 1.5rem;
+        transition: color 3s, text-shadow 3s;
+    }
+    .Slogan:hover {
+        color: rgba(0, 0, 0, 0.7);
+        text-shadow: 3px 4px 8px rgba(0, 0, 0, 1), 0px 0px 3px rgb(0, 238, 255);
+    }
+    .Slogan > p {
+        font-size: 1rem;
+    }
+    #SeccionBienvenida > article > button {
+        width: 100%;
+        max-width: 10em;
+        font-size: 1rem;
+        border: 3px inset black;
+        border-radius: 8px;
+        padding: 0.5em;
+        transition: none;
+    }
+    #SeccionBienvenida > article > button:hover {
+        background: none;
+        color:none;
+        font-weight: none;
+        text-shadow: none;
+    }
+    .Cita {
+        flex-direction: column; /* Vertical para móviles */
+        gap: 1em;
+        width: 70%;
+    }
+    .Cita > div {
+        display: none;
+    }
+    blockquote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 12px;
+        padding: 1em;
+        width: 90%;
+        max-width: 30em; 
+        margin: 1em auto;
+    }
+
+    /*SECCIÓN DE PELICULAS*/
+    #SeccionPeliculas {
+        gap: 0rem;
+        animation: none;
+    }
+    header
+    {
+        flex-direction: column;
+        padding: 0.1em;
+    }
+    header > div
+    {
+        width: 2em;
+    }
+    header > nav
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        width: 100%;
+        font-size: 0.7em;
+    }
+    header > nav > select
+    {
+        margin-left: 1em;
+        font-size: 0.7em;
+    }
+    header > nav > input
+    {
+        width: 6em;
+        font-size: 0.7em;
+    }
+    header > nav > #botones
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    header > nav > #botones > div
+    {
+        transition: none;
+    }
+    header > nav > #botones > div:hover
+    {
+        color:  none;
+        text-shadow: none; 
+        border-radius: none;
+    }
+    ul
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0.1em;
+    }
+    li
+    {
+        width: 17em;
+        height: auto;
+        gap: 0.5em;
+        padding: 0.1em;
+        transition: none;
+    }
+    li:hover
+    {
+        box-shadow: none;
+        transform: none;
+    }
+    li > img
+    {
+        width: 14em;
+        height: 20em;
+        border-radius: 12px;
+        margin-top: 0.2em;
+    }
+
+    /*SECCIÓN DE DETALLES*/
+    #SeccionDetalle {
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+        animation: none;
+    }
+    #SeccionDetalle > .VolverAtras,#SeccionInforme > .VolverAtras
+    {
+        height: 2em;
+    }
+    #SeccionDetalle > .VolverAtras > button,#SeccionInforme > .VolverAtras > button
+    {
+        font-size: 2em;
+        font-weight: bold;
+        background: none;
+        border: none;
+        transition: none;
+        animation: none;
+        animation-delay: none;
+        margin-right: none;
+    }
+    #SeccionDetalle > .VolverAtras > button:hover,#SeccionInforme > .VolverAtras > button:hover
+    {
+        text-shadow:  none;
+        font-size: none;
+    }
+    #SeccionDetalle > #detalle
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+        height: auto;
+    }
+    #SeccionDetalle > #detalle > #ImagenPelicula
+    {
+        width: 17em;
+        height: auto;
+        gap: 0.5em;
+        padding: 0.1em;
+        transition: none;
+    }
+    #ImagenPelicula:hover
+    {
+        box-shadow: none;
+        transform: none;
+    }
+    #SeccionDetalle > #detalle > #ImagenPelicula > img
+    {
+        width: 14em;
+        height: 20em;
+        border-radius: 12px;
+        margin-top: 0.2em;
+    }
+    #SeccionDetalle > #detalle > #DetallePelicula
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1em;
+        width: 19em;
+        height: auto;
+        padding: 0.1em;
+    }
+    #SeccionDetalle > #detalle > #DetallePelicula > p
+    {
+        font-size: 1em;
+    }
+    #SeccionDetalle > #detalle > #DetallePelicula > p > b
+    {
+        transition: none;
+    }
+    #SeccionDetalle > #detalle > #DetallePelicula > p > b:hover
+    {
+        color: none;
+        text-shadow: none;
+    }
+
+}

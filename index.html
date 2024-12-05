@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Rosa María Llorente Mojica">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="JS/Script.js"></script>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Cinecronos</title>
+</head>
+<body>
+<!-- SECCIÓN BIENVENIDA -->
+    <section id="SeccionBienvenida">
+        <div class="Titulo">
+            <p id="letra1">C</p>
+            <p id="letra2">I</p>
+            <p id="letra3">N</p>
+            <p id="letra4">E</p>
+            <p id="letra5">C</p>
+            <p id="letra6">R</p>
+            <p id="letra7">O</p>
+            <p id="letra8">N</p>
+            <p id="letra9">O</p>
+            <p id="letra10">S</p>
+        </div>
+        <article>
+            <div class="Slogan">
+                <p></p>
+            </div>
+        <button id="IrRepositorio">Comenzar experiencia</button>
+        </article>
+        <div class="Cita">
+            
+            <blockquote id="CitaCine">
+                <div class="imagen">
+                    <img src="imagenes/Walt Disney.jpg" alt="Elemento de tomas">
+                </div>
+                <p>"El cine es un sueño que se hace realidad."</p>
+                <cite>Walt Disney</cite>
+            </blockquote>
+            <div id="ElementoTomas">
+                <img src="imagenes/ElementoDeTomas.png" alt="Elemento de tomas">
+            </div>
+        </div>
+    </section>
+<!-- SECCIÓN PELICULAS -->
+    <section id="SeccionPeliculas">
+        <header id="cabecera">
+            <div>
+                <a href="#SeccionPeliculas"><img src="imagenes/Logo.webp" alt="Logo de cinecronos" id="logo"></a>
+            </div>
+            <nav>
+                <select id="TipoBusqueda">
+                    <option value="Movie">Peliculas</option>
+                    <option value="Series">Series</option>
+                </select>
+                <input type="text" name="" id="BuscarPelicula">
+                <div  id="botones">
+                    <div id="Buscar">Buscar</div>
+                    <div id="Informe">Crear Informe</div>
+                    <div id="musica">Musica: <span id="estado"></span></div>
+                </div>
+            </nav>
+        </header>
+        <div class="peliculas">
+            <h2 id="NResultados"></h2>
+            <ul id="Lista_Peliculas"></ul>
+        </div>
+    </section>
+<!-- SECCIÓN DETALLE -->
+    <section id="SeccionDetalle">
+        <div class="VolverAtras">
+            <button id="VolverAtras">X</button>
+        </div>
+        <div id="detalle">
+            <div id="ImagenPelicula">
+            </div>
+            <article id="DetallePelicula">
+                <p id="Tipo"></p>
+                <p id="Anio"></p>
+                <p id="Pais"></p>
+                <p id="Genero"></p>
+                <p id="Lenguaje"></p>
+                <p id="Director"></p>
+                <p id="Actores"></p>
+                <p id="Sinopsis"></p>
+                <p id="Guionista"></p>
+                <p id="Duración"></p>
+                <p id="Clasificacion"></p>
+                <p id="FechaLanzamiento"></p>
+                <p id="Premios"></p>
+                <p id="Taquilla"></p>
+                <p id="Productora"></p>
+                <p id="SitioWeb"></p>
+            </article>
+        </div>
+    </section>
+<!-- SECCIÓN INFORME DE BUSQUEDA -->
+    <section id="SeccionInforme">
+        <div class="VolverAtras">
+            <button id="VolverAtras2">X</button>
+        </div>
+        <h2>Resultados de imdbRating</h2>
+        <ol>
+            --Top
+        </ol>
+        <div id="imdbRating" style="width: 900px; height: 500px;"></div>
+        <h2>Películas con mayor recaudación</h2>
+        <ol>
+            --Top
+        </ol>
+        <div id="recaudación" style="width: 900px; height: 500px;"></div>
+        <h2>Películas más votadas</h2>
+        <ol>
+            --Top
+        </ol>
+        <div id="votadas" style="width: 900px; height: 500px;"></div>
+        
+    </section>
+</body>
+</html>
